@@ -1,9 +1,11 @@
 from main import *
 import passwords
+import calculator
 
 class mainMenu: 
     def callback(self): 
         passwords.mainMenu()
+        calculator.mainMenu()
     def __init__(self):
         window = tk.Tk()
         # Widget Start
@@ -13,6 +15,8 @@ class mainMenu:
         btn1.grid()
         btn2 = tk.Button(window, bg="#bec5c4", font="Arial", text="Passwords", command=self.callback)
         btn2.grid()
+        btn3 = tk.Button(window, bg="#bec5c4", font="Arial", text="Calculator", command=self.callback)
+        btn3.grid()
         # Widget End
         window.mainloop()
 

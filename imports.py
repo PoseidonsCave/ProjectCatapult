@@ -1,6 +1,4 @@
-import base64
 import math
-import parser
 import os
 import sys
 import tkinter as tk

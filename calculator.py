@@ -1,4 +1,6 @@
-from imports import *
+from imports import math
+from imports import tk
+
 
 class mainMenu:
     def __init__(self):

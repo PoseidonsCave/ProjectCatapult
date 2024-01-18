@@ -1,14 +1,23 @@
-from imports import math
-from imports import tk
+import tkinter as tk
+import math
 
-
-class mainMenu:
+class MainMenu:
     def __init__(self):
-        window = tk.Tk()
-        # Widget Start
-        window.title("Calculator")
-        window.geometry("250x250")
-        btn1 = tk.Button(window, bg="#bec5c4", font="Arial", width=15, text="Process Kill Button", command=window.destroy)
+        self.window = tk.Tk()
+        self.setup_window()
+        self.create_widgets()
+        self.window.mainloop()
+
+    def setup_window(self):
+        self.window.title("Calculator")
+        self.window.geometry("250x250")
+
+    def create_widgets(self):
+        btn1 = self.create_button("Process Kill Button", self.window.destroy)
         btn1.grid()
-        # Widget End
-        window.mainloop()
+
+    def create_button(self, text, command):
+        return tk.Button(self.window, bg="#bec5c4", font="Arial", width=15, text=text, command=command)
+
+if __name__ == "__main__":
+    app = MainMenu()

@@ -23,10 +23,10 @@ class MainMenu:
         return tk.Button(self.root, bg="#bec5c4", font="Arial", width=15, text=text, command=command)
 
     def open_passwords(self):
-        passwords.mainMenu()
+        passwords.passwordMenu()
 
     def open_calculator(self):
-        calculator.mainMenu()
+        calculator.calcMenu()
 
 if __name__ == "__main__":
     root = tk.Tk()

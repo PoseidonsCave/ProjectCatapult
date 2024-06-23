@@ -1,7 +1,7 @@
 import tkinter as tk
 from gui import MainMenu
 
-class MainMenu:
+class passwordMenu:
     def __init__(self):
         self.window = tk.Tk()
         self.setup_window(self.window)
